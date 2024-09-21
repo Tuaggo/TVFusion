@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVFusion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-title">
+        <h1>TVFusion 📺</h1>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Pesquisar canais...">
+    </div>
+
+    <div class="player-container">
+        <iframe id="videoPlayer" width="560" height="315" allow="encrypted-media" allowfullscreen frameborder="0"></iframe>
+    </div>
+
+    <div class="category">
+        <h2>TV Aberta</h2>
+        <div class="channel" onclick="openChannel('https://embedmax.site/tvl/sbt.php')">
+            <img src="https://playertv.net/wp-content/uploads/2024/04/sbt-300x169.webp" alt="SBT">
+            <h3>SBT</h3>
+        </div>
+        <div class="channel" onclick="openChannel('https://embedmax.site/tvl/globoSP.php')">
+            <img src="https://embedmax.site/imgs-thumbs/assistir%20globo%20ao%20vivo.webp" alt="Globo SP">
+            <h3>Globo SP</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
